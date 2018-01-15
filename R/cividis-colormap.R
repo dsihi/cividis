@@ -115,7 +115,7 @@ cividis <-
                      })
 
     map <-
-      cividisLite::cividis.map[cividisLite::cividis.map$opt == option,]
+      cividis::cividis.map[cividis::cividis.map$opt == option,]
     map_cols <- grDevices::rgb(map$R, map$G, map$B)
     fn_cols <-
       grDevices::colorRamp(map_cols, space = "Lab", interpolate = "spline")
@@ -151,7 +151,7 @@ cividisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
                    D = "V", cividis = "V",
                    {warning(paste0("Option '", option, "' does not exist. Defaulting to 'cividis'.")); "D"})
 
-  map <- cividisLite::cividis.map[cividisLite::cividis.map$opt == option, ]
+  map <- cividis::cividis.map[cividis::cividis.map$opt == option, ]
   map_cols <- grDevices::rgb(map$R, map$G, map$B)
   fn_cols <- grDevices::colorRamp(map_cols, space = "Lab", interpolate = "spline")
   cols <- fn_cols(seq(begin, end, length.out = n)) / 255
