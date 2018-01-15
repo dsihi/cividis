@@ -8,7 +8,7 @@
 cividis(n, alpha = 1, begin = 0, end = 1, direction = 1, option = "V")
 
 cividisMap(n = 256, alpha = 1, begin = 0, end = 1, direction = 1,
-  option = "D")
+  option = "V")
 }
 \arguments{
 \item{n}{The number of colors (\eqn{\ge 1}) to be in the palette.}
@@ -22,10 +22,6 @@ cividisMap(n = 256, alpha = 1, begin = 0, end = 1, direction = 1,
 
 \item{direction}{Sets the order of colors in the scale. If 1, the default, colors
 are ordered from darkest to lightest. If -1, the order of colors is reversed.}
-
-\item{option}{A character string indicating the colormap option to use. Four
-options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-and "cividis" (or "D", the default option).}
 }
 \value{
 \code{cividis} returns a character vector, \code{cv}, of color hex
@@ -73,13 +69,13 @@ dat <- data.frame(x = rnorm(10000), y = rnorm(10000))
 
 ggplot(dat, aes(x = x, y = y)) +
   geom_hex() + coord_fixed() +
-  scale_fill_gradientn(colours = cividis(256, option = "D"))
+  scale_fill_gradientn(colours = cividis(256))
 
 # using code from RColorBrewer to demo the palette
 n = 200
 image(
   1:n, 1, as.matrix(1:n),
-  col = cividis(n = n, begin = 0, end = 1, option = "V"),
+  col = cividis(n = n, begin = 0, end = 1),
   xlab = "cividis n", ylab = "", xaxt = "n", yaxt = "n", bty = "n"
 )
 }

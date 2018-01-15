@@ -8,10 +8,10 @@
 \title{cividis color scales}
 \usage{
 scale_color_cividis(..., alpha = 1, begin = 0, end = 1, direction = 1,
-  discrete = FALSE, option = "D")
+  discrete = FALSE, option = "V")
 
 scale_colour_cividis(..., alpha = 1, begin = 0, end = 1, direction = 1,
-  discrete = FALSE, option = "D")
+  discrete = FALSE, option = "V")
 
 scale_fill_cividis(..., alpha = 1, begin = 0, end = 1, direction = 1,
   discrete = FALSE, option = "V")
