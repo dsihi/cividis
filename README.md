@@ -24,7 +24,7 @@ To install the developmental version of `cividis`, use the following R code:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("marcosci/cividis", ref = "develop")
+devtools::install_github("marcosci/cividis")
 ```
 
 Example
