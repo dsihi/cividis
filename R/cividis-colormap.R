@@ -21,7 +21,7 @@
 #' perception of colors that affects 8.5% of the human population. This colormap was developed as a
 #' [Python module called "cmaputil"](https://github.com/pnnl/cmaputil). Thus, it is designed to be
 #' perfectly perceptually-uniform, both in regular form and also when converted to
-#' black-and-white, and can be perceived by readers with the all forms of color blindness.
+#' black-and-white, and can be perceived by readers with all forms of color blindness.
 #'
 #' @param n The number of colors (\eqn{\ge 1}) to be in the palette.
 #'
