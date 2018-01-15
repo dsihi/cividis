@@ -55,9 +55,9 @@ img(rev(magma(n_col)), "magma")
 img(dichromat(rev(cividis(n_col)), "tritan"), "cividis blue-blind (tritanopia)")
 ```
 
-... and like this in action (coloring neutral landscape models from [NLMR](https://github.com/marcosci/NLMR): 
+... and like this in action (coloring neutral landscape models from [NLMR](https://github.com/marcosci/NLMR)): 
 
-```{r echo=FALSE, message=FALSE, fig.height=7, fig.width=7, fig.align='center'}
+```{r echo=FALSE, message=FALSE, fig.height=15, fig.width=7, fig.align='center'}
 library(NLMR)
 library(rasterVis)
 library(ggplot2)
@@ -151,7 +151,7 @@ gplot(x3) +
       label.hjust = 0.5
  )) -> p4
 
-p1 + p2 + p3 + p4 + plot_layout(ncol = 2)
+p1 + p2 + p3 + p4 + plot_layout(ncol = 1)
 ```
 
 ## Installation

@@ -11,11 +11,11 @@ Because of the high interest of the scientific community in R, we make this new 
 
 This is how it looks like:
 
-![](README-unnamed-chunk-9-1.png)
+![](README-unnamed-chunk-4-1.png)
 
 ... and like this in action (coloring neutral landscape models from [NLMR](https://github.com/marcosci/NLMR):
 
-<img src="README-unnamed-chunk-10-1.png" style="display: block; margin: auto;" />
+<img src="README-unnamed-chunk-5-1.png" style="display: block; margin: auto;" />
 
 Installation
 ------------
