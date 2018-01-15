@@ -47,8 +47,9 @@ library(scales)
 library(colorspace)
 library(dichromat)
 
-par(mfrow=c(4, 1), mar=rep(1, 4))
+par(mfrow=c(5, 1), mar=rep(1, 4))
 img(rev(cividis(n_col)), "cividis")
+img(rep("#FFFFFF", 128), nam = "")
 img(rev(viridis(n_col)), "viridis")
 img(rev(magma(n_col)), "magma")
 img(dichromat(rev(cividis(n_col)), "tritan"), "cividis blue-blind (tritanopia)")
@@ -60,7 +61,7 @@ img(dichromat(rev(cividis(n_col)), "tritan"), "cividis blue-blind (tritanopia)")
 library(NLMR)
 library(rasterVis)
 library(ggplot2)
-library(gridExtra)
+library(patchwork)
 library(cividis)
 
 # simulate NLM
@@ -150,7 +151,7 @@ gplot(x3) +
       label.hjust = 0.5
  )) -> p4
 
-grid.arrange(p1, p2, p3, p4, ncol = 2)
+p1 + p2 + p3 + p4 + plot_layout(ncol = 2)
 ```
 
 ## Installation
