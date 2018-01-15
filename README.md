@@ -27,12 +27,12 @@ library(cividis)
 
 #### Maintainer(s)
 
-Marco Sciaini - [@msciain](https://twitter.com/msciain) - <msciain@uni-goettingen.de>
+Marco Sciaini - [@msciain](https://twitter.com/msciain) - <sciaini.marco@gmail.com>
 
 #### Author(s)
 
-Marco Sciaini - [@msciain](https://twitter.com/msciain) - <msciain@uni-goettingen.de>
-Cédric Scherer - [@CedScherer](https://twitter.com/CedScherer) - <scherer@izw-berlin.de>
+Marco Sciaini - [@msciain](https://twitter.com/msciain) - <sciaini.marco@gmail.com>
+Cédric Scherer - [@CedScherer](https://twitter.com/CedScherer) - <cedricphilippscherer@gmail.com>
 
 ---
 
