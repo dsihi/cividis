@@ -1,6 +1,7 @@
 # cividis
 
 [![Build Status](https://travis-ci.org/marcosci/cividis.svg?branch=master)](https://travis-ci.org/marcosci/cividis)
+[![codecov](https://codecov.io/gh/marcosci/cividis/branch/master/graph/badge.svg)](https://codecov.io/gh/marcosci/cividis)
 
 Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow recently
 [introduced optimized color maps](https://arxiv.org/ftp/arxiv/papers/1712/1712.01662.pdf)
