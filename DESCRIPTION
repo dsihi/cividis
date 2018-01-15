@@ -20,6 +20,8 @@ Depends:
     ggplot2 (>= 1.0.1),
     gridExtra
 Suggests:
+    MASS,
+    scales,
     hexbin (>= 1.27.0),
     testthat,
     covr
