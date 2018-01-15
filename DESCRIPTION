@@ -3,10 +3,9 @@ Type: Package
 Title:  Color Vision Deficiency Optimized Version Of Viridis
 Version: 0.2.0
 Authors@R: c(
-      person("Marco", "Sciaini", email = "garnier@njit.edu", role = c("aut", "cre")),
-      person("Cedric", "Scherer", email = "noam.ross@gmail.com", role = c("aut"))
+      person("Marco", "Sciaini", email = "sciaini.marco@gmail.com", role = c("aut", "cre")),
+      person("Cedric", "Scherer", email = "noam.ross@gmail.com", role = c("aut", "cre"))
   )
-Maintainer: Marco Sciaini <sciaini.marco@gmail.com>
 Description: lala
 License: MIT + file LICENSE
 LazyData: TRUE
