@@ -27,8 +27,6 @@ To install the developmental version of `cividis`, use the following R code:
 devtools::install_github("marcosci/cividis", ref = "develop")
 ```
 
-\`\`\`
-
 Example
 -------
 
@@ -67,20 +65,19 @@ gplot(x) +
 #> which will replace the existing scale.
 ```
 
-------------------------------------------------------------------------
-
-#### Maintainer(s)
+Maintainer(s)
+-------------
 
 Marco Sciaini - \[@msciain\](<https://twitter.com/msciain>) - <sciaini.marco@gmail.com>
 
-#### Author(s)
+Author(s)
+---------
 
 Marco Sciaini - \[@msciain\](<https://twitter.com/msciain>) - <sciaini.marco@gmail.com>
 Cédric Scherer - \[@CedScherer\](<https://twitter.com/CedScherer>) - <cedricphilippscherer@gmail.com>
 
-------------------------------------------------------------------------
-
-#### References
+References
+----------
 
 The colormap in the `cividis` package was [created](https://github.com/pnnl/cmaputil) and [published](https://arxiv.org/ftp/arxiv/papers/1712/1712.01662.pdf) by Jamie R. Nuñez (\[@jamienunez\](<https://github.com/jamienunez>)) and colleagues.
 
