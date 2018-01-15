@@ -34,10 +34,6 @@
 #' @param direction Sets the order of colors in the scale. If 1, the default, colors
 #' are ordered from darkest to lightest. If -1, the order of colors is reversed.
 #'
-#' @param option A character string indicating the colormap option to use. Four
-#' options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-#' and "cividis" (or "D", the default option).
-#'
 #' @return \code{cividis} returns a character vector, \code{cv}, of color hex
 #' codes. This can be used either to create a user-defined color palette for
 #' subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
@@ -72,13 +68,13 @@
 #'
 #' ggplot(dat, aes(x = x, y = y)) +
 #'   geom_hex() + coord_fixed() +
-#'   scale_fill_gradientn(colours = cividis(256, option = "D"))
+#'   scale_fill_gradientn(colours = cividis(256))
 #'
 #' # using code from RColorBrewer to demo the palette
 #' n = 200
 #' image(
 #'   1:n, 1, as.matrix(1:n),
-#'   col = cividis(n = n, begin = 0, end = 1, option = "V"),
+#'   col = cividis(n = n, begin = 0, end = 1),
 #'   xlab = "cividis n", ylab = "", xaxt = "n", yaxt = "n", bty = "n"
 #' )
 #' @export
@@ -106,13 +102,7 @@ cividis <-
     option <- switch(option,
                      V = "V", cividis = "V",
                      {
-                       warning(paste0(
-                         "Option '",
-                         option,
-                         "' does not exist. Defaulting to 'cividis'."
-                       ))
-                       "V"
-                     })
+                       warning(paste0("Option '", option, "' does not exist. Defaulting to 'cividis'.")); "V"})
 
     map <-
       cividis::cividis.map[cividis::cividis.map$opt == option,]
@@ -132,7 +122,12 @@ cividis <-
 #' \code{n = 256} by default, which corresponds to the data from the original
 #' 'cividis' color map in Matplotlib.
 #'
-cividisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, option = "D") { # nocov start
+cividisMap <- function(n = 256,
+                       alpha = 1,
+                       begin = 0,
+                       end = 1,
+                       direction = 1,
+                       option = "V") { # nocov start
   if (begin < 0 | begin > 1 | end < 0 | end > 1) {
     stop("begin and end must be in [0,1]")
   }
@@ -148,8 +143,8 @@ cividisMap <- function(n = 256, alpha = 1, begin = 0, end = 1, direction = 1, op
   }
 
   option <- switch(option,
-                   D = "V", cividis = "V",
-                   {warning(paste0("Option '", option, "' does not exist. Defaulting to 'cividis'.")); "D"})
+                   V = "V", cividis = "V",
+                   {warning(paste0("Option '", option, "' does not exist. Defaulting to 'cividis'.")); "V"})
 
   map <- cividis::cividis.map[cividis::cividis.map$opt == option, ]
   map_cols <- grDevices::rgb(map$R, map$G, map$B)
