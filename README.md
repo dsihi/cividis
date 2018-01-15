@@ -14,7 +14,7 @@ all forms of color blindness. The cividis colormap was developed as a
 [Python module called "cmaputil"](https://github.com/pnnl/cmaputil).
 
 Because of the high interest of the scientific community in R, we make this
-new colormap available for R!
+new colormap available for R!viriid
 
 This is how it looks like:
 
@@ -48,4 +48,13 @@ Cédric Scherer - [@CedScherer](https://twitter.com/CedScherer) - <cedricphilipp
 
 #### References
 
-The colormap in the `cividis` package was created by by Jamie R. Nuñez ([@jamienunez](https://github.com/jamienunez)) and Sean M. Colby ([@smcolby](https://github.com/smcolby)).
+The colormap in the `cividis` package was
+[created](https://github.com/pnnl/cmaputil) and
+[published](https://arxiv.org/ftp/arxiv/papers/1712/1712.01662.pdf) by Jamie
+R. Nuñez ([@jamienunez](https://github.com/jamienunez)) and colleagues.
+
+The package is mainly a cheeky copy of the beautiful
+[`viridis` package for R](https://github.com/sjmgarnier/viridis) that was
+created by [Simon Garnier](https://twitter.com/sjmgarnier),
+[Noam Ross](https://twitter.com/noamross), and
+[Bob Rudis](https://twitter.com/hrbrmstr).
