@@ -1,7 +1,5 @@
 #' cividis palette (discrete)
 #'
-#' cividis palette (discrete)
-#'
 #' @details
 #'
 #' See \link[cividis]{cividis} for more information on the color scale.
@@ -15,9 +13,8 @@
 #' @param direction Sets the order of colors in the scale. If 1, the default, colors
 #' are ordered from darkest to lightest. If -1, the order of colors is reversed.
 #'
-#' @param option A character string indicating the colormap option to use. Four
-#' options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-#' and "cividis" (or "D", the default option).
+#' @param option A character string indicating the colormap option to use. So far, there is only one
+#' option called "cividis" (or "V").
 #'
 #' @examples
 #' library(scales)

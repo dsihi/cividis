@@ -21,7 +21,7 @@
 #' perception of colors that affects 8.5% of the human population. This colormap was developed as a
 #' [Python module called "cmaputil"](https://github.com/pnnl/cmaputil). Thus, it is designed to be
 #' perfectly perceptually-uniform, both in regular form and also when converted to
-#' black-and-white, and can be perceived by readers with the all forms of color blindness.
+#' black-and-white, and can be perceived by readers with all forms of color blindness.
 #'
 #' @param n The number of colors (\eqn{\ge 1}) to be in the palette.
 #'
@@ -42,21 +42,6 @@
 #' codes. This can be used either to create a user-defined color palette for
 #' subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
 #' graphics functions or in \code{par}.
-#'
-#' @details
-#'
-#' \if{html}{Here are the color scales:
-#'
-#'   \out{<div style="text-align: center">}\figure{cividis-scales.png}{options: style="width:750px;max-width:90\%;"}\out{</div>}
-#'
-#'   }
-#' \if{latex}{Here are the color scales:
-#'
-#'   \out{\begin{center}}\figure{cividis-scales.png}\out{\end{center}}
-#'   }
-#'
-#' Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
-#' devices: see \code{\link[grDevices]{rgb}}.
 #'
 #' @examples
 #' library(ggplot2)
