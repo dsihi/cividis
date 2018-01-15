@@ -1,5 +1,7 @@
 # cividis
 
+[![Build Status](https://travis-ci.org/marcosci/cividis.svg?branch=master)](https://travis-ci.org/marcosci/cividis)
+
 Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow recently [introduced optimized color maps]
 (https://arxiv.org/ftp/arxiv/papers/1712/1712.01662.pdf) for the scientific community. This so-called "cividis" color palette is generated
 by optimizing the ["viridis" colormap](https://bids.github.io/colormap/) and is optimal for viewing by those with or without color vision deficiency (CVD), a different visual perception of colors that affects 8.5% of the human population. This colormap was developed as a [Python module called "cmaputil"](https://github.com/pnnl/cmaputil).
