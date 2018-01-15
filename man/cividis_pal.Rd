@@ -5,7 +5,7 @@
 \title{cividis palette (discrete)}
 \usage{
 cividis_pal(alpha = 1, begin = 0, end = 1, direction = 1,
-  option = "D")
+  option = "V")
 }
 \arguments{
 \item{alpha}{pass through parameter to \code{cividis}}
@@ -17,15 +17,14 @@ cividis_pal(alpha = 1, begin = 0, end = 1, direction = 1,
 \item{direction}{Sets the order of colors in the scale. If 1, the default, colors
 are ordered from darkest to lightest. If -1, the order of colors is reversed.}
 
-\item{option}{A character string indicating the colormap option to use. Four
-options are available: "magma" (or "A"), "inferno" (or "B"), "plasma" (or "C"),
-and "cividis" (or "D", the default option).}
+\item{option}{A character string indicating the colormap option to use. So far, there is only one
+option called "cividis" (or "V").}
 }
 \description{
 cividis palette (discrete)
 }
 \details{
-See \link[cividis]{cividis} for more information on the color scale.
+See \code{cividis} for more information on the color scale.
 }
 \examples{
 library(scales)

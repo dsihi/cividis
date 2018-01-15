@@ -2,7 +2,7 @@
 #'
 #' @details
 #'
-#' See \link[cividis]{cividis} for more information on the color scale.
+#' See \code{cividis} for more information on the color scale.
 #'
 #' @param alpha pass through parameter to \code{cividis}
 #'
@@ -22,7 +22,7 @@
 #'
 #'
 #' @export
-cividis_pal <- function(alpha = 1, begin = 0, end = 1, direction = 1, option= "D") {
+cividis_pal <- function(alpha = 1, begin = 0, end = 1, direction = 1, option= "V") {
   function(n) {
     cividis(n, alpha, begin, end, direction, option)
   }
@@ -57,7 +57,7 @@ scale_colour_cividis <- scale_color_cividis
 #' Otherwise the function will return a \code{discrete_scale} with the plot-computed
 #' number of colors.
 #'
-#' See \link[cividis]{cividis} for more information on the color scale.
+#' See \code{cividis} for more information on the color scale.
 #'
 #' @param ... parameters to \code{discrete_scale} or \code{scale_fill_gradientn}
 #'
@@ -131,5 +131,4 @@ scale_fill_cividis <- function(..., alpha = 1, begin = 0, end = 1, direction = 1
   } else {
     scale_fill_gradientn(colours = cividis(256, alpha, begin, end, direction, option), ...)
   }
-
 }

@@ -41,7 +41,7 @@ For \code{discrete == FALSE} (the default) all other arguments are as to
 Otherwise the function will return a \code{discrete_scale} with the plot-computed
 number of colors.
 
-See \link[cividis]{cividis} for more information on the color scale.
+See \code{cividis} for more information on the color scale.
 }
 \examples{
 library(ggplot2)

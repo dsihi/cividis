@@ -1,4 +1,4 @@
-cividis.map <- read.csv("data-raw/cividis.txt", sep =  ";")
+cividis.map <- read.csv("data-raw/cividis.txt", sep = ";")
 
 cividis.map$opt <- "V"
 

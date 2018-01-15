@@ -15,7 +15,7 @@ all forms of color blindness. The cividis colormap was developed as a
 [Python module called "cmaputil"](https://github.com/pnnl/cmaputil).
 
 Because of the high interest of the scientific community in R, we make this
-new colormap available for R!viriid
+new colormap available for R!
 
 This is how it looks like:
 
