@@ -1,4 +1,4 @@
-# viridisLite
+# cividis
 
 [![cran version](http://www.r-pkg.org/badges/version/viridisLite)](https://cran.r-project.org/package=viridisLite)
 [![rstudio mirror per-month downloads](http://cranlogs.r-pkg.org/badges/viridisLite)](https://github.com/metacran/cranlogs.app)
@@ -7,74 +7,40 @@
 [![Coverage Status](https://img.shields.io/codecov/c/github/hrbrmstr/viridisLite/master.svg)](https://codecov.io/github/hrbrmstr/viridisLite?branch=master)
 
 
-[Matplotlib](http://matplotlib.org/) recently [introduced new color maps]
-(http://matplotlib.org/style_changes.html) for their graphs. They are called
-`viridis`, `magma`, `inferno`, and `plasma`. `viridis` was made the new default 
-color map of Matplotlib. 
+Jamie R. Nuñez, Christopher R. Anderton, and Ryan S. Renslow recently [introduced optimized color maps]
+(https://arxiv.org/ftp/arxiv/papers/1712/1712.01662.pdf) for the scientific community. This so-called "cividis" color palette is generated
+by optimizing the ["viridis" colormap](https://bids.github.io/colormap/) and is optimal for viewing by those with or without color vision deficiency (CVD), a different visual perception of colors that affects 8.5% of the human population. This colormap was developed as a [Python module called "cmaputil"](https://github.com/pnnl/cmaputil).
 
-These four color maps are designed in such a way that they will analytically be 
-perfectly perceptually-uniform, both in regular form and also when converted to 
-black-and-white. They are also designed to be perceived by readers with the most 
-common form of color blindness. 
+Because of the high interest of the scientific community in R, we make this new colormap available for R
 
-AND... they are pretty!
-
-AND... they are now available for R! 
-
-> **NOTE**: `viridisLite` is the 'lite' version of the more complete 
-> [`viridis` package](https://github.com/sjmgarnier/viridis). `viridisLite` contains
-> only the core functions of `viridis` that generate the color vectors for each 
-> of the aforementioned color maps. It does not have any of the other features of
-> the full `viridis` package (e.g. scale functions for `ggplot2`). This was 
-> requested by users of `viridis` who did not want to have to import the dependencies 
-> of `viridis` but still wanted to be able to use the color maps it provides. 
-
----
-
-#### Look how pretty they are! 
-
-![Sample image](https://raw.githubusercontent.com/sjmgarnier/viridis/master/img/sample2.png)
+![Sample image](https://raw.githubusercontent.com/msciain/blablabla)
 
 ---
 
 #### Installation
 
-`viridisLite 0.1.3` is now [available on CRAN](https://cran.r-project.org/package=viridisLite).  
-You can install it using RStudio package manager or by typing the following line
-in your R terminal:
+`cividis 0.1` is now [available as GitHub repository](https://github.com/marcosci/cividis).  
+Simply copy the following lines of code in your R terminal and it should install
+everything you need to use `cividis`:
 
 ```{r}
-install.packages("viridisLite")
-library(viridisLite)
+install.packages("cividis")
+library(cividis)
 ```
 
-If you prefer to install the development version from this GitHub repository,
-simply copy the following lines of code in your R terminal and it should install 
-everything you need to use `viridisLite` on your computer: 
-
-```{r}
-if (!require("devtools")) install.packages("devtools")
-devtools::install_github("sjmgarnier/viridisLite")
-
-library(viridisLite)
-```
 ---
 
 #### Maintainer(s)
 
-Simon Garnier - [@sjmgarnier](https://twitter.com/sjmgarnier) - <garnier@njit.edu>
+Marco Sciaini - [@msciain](https://twitter.com/msciain) - <msciain@uni-goettingen.de>
+
+#### Author(s)
+
+Marco Sciaini - [@msciain](https://twitter.com/msciain) - <msciain@uni-goettingen.de>
+Cédric Scherer - [@CedScherer](https://twitter.com/CedScherer) - <scherer@izw-berlin.de>
 
 ---
 
 #### References
 
-The color maps in the `viridis` package were created by Stéfan van der Walt ([@stefanv](https://github.com/stefanv))
-and Nathaniel Smith ([@njsmith](https://github.com/njsmith)). 
-
-If you want to know more about the science behind the creation of these color maps, 
-you can watch this [presentation of `viridis`](https://youtu.be/xAoljeRJ3lU) by 
-their authors at [SciPy 2015](http://scipy2015.scipy.org/). 
-
-
-
-
+The colormap in the `cividis` package was created by by Jamie R. Nuñez ([@jamienunez](https://github.com/jamienunez)) and Sean M. Colby ([@smcolby](https://github.com/smcolby)).
