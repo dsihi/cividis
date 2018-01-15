@@ -9,13 +9,12 @@
   \item R: Red value
   \item G: Green value
   \item B: Blue value
-  \item opt: The colormap "option" (A: magma; B: inferno; C: plasma; D: cividis)
 }}
 \usage{
 cividis.map
 }
 \description{
 A dataset containing the original RGB values of the default Matplotlib color
- map ('cividis'). Source: \url{https://github.com/BIDS/colormap/blob/master/option_d.py}.
+ map ('cividis'). Source: \url{https://github.com/pnnl/cmaputil/blob/master/colormaps/cividis.txt}.
 }
 \keyword{datasets}

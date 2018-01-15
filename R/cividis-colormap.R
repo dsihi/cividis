@@ -43,21 +43,6 @@
 #' subsequent graphics by \code{palette(cv)}, a \code{col =} specification in
 #' graphics functions or in \code{par}.
 #'
-#' @details
-#'
-#' \if{html}{Here are the color scales:
-#'
-#'   \out{<div style="text-align: center">}\figure{cividis-scales.png}{options: style="width:750px;max-width:90\%;"}\out{</div>}
-#'
-#'   }
-#' \if{latex}{Here are the color scales:
-#'
-#'   \out{\begin{center}}\figure{cividis-scales.png}\out{\end{center}}
-#'   }
-#'
-#' Semi-transparent colors (\eqn{0 < alpha < 1}) are supported only on some
-#' devices: see \code{\link[grDevices]{rgb}}.
-#'
 #' @examples
 #' library(ggplot2)
 #' library(hexbin)
