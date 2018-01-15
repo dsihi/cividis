@@ -1,4 +1,4 @@
 library(testthat)
-library(viridisLite)
+library(cividisLite)
 
-test_check("viridisLite")
+test_check("cividisLite")
