@@ -38,7 +38,7 @@ cividis_pal <- function(alpha = 1, begin = 0, end = 1, direction = 1, option= "D
 #'
 #' @export
 scale_color_cividis <- function(..., alpha = 1, begin = 0, end = 1, direction = 1,
-                                discrete = FALSE, option = "D") {
+                                discrete = FALSE, option = "V") {
   if (discrete) {
     discrete_scale("colour", "cividis", cividis_pal(alpha, begin, end, direction, option), ...)
   } else {
