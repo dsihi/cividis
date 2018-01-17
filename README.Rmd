@@ -29,9 +29,9 @@ all forms of color blindness. The cividis colormap was developed as a
 [Python module called "cmaputil"](https://github.com/pnnl/cmaputil).
 
 Because of the high interest of the scientific community in R, we make this
-new colormap available for R!
+new colormap available as an R package!
 
-This is how it looks like:
+This is how the colormap looks like in comparison to viridis colors and from the view of a blue-blind person:
 
 
 ```{r  echo=FALSE, message=FALSE, fig.height=2.86}
